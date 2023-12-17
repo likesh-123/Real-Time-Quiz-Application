@@ -1,5 +1,6 @@
 const express = require('express');
 const http = require('http');
+const cors = require('cors');
 const socketIO = require('socket.io');
 const connectDB = require('./config/connect-database');
 const routes = require('./routes/user-routes');
@@ -12,6 +13,8 @@ const io = socketIO(server);
 
 // Connect to MongoDB
 connectDB();
+
+app.use(cors());
 
 // Middleware for JSON parsing
 app.use(express.json());
