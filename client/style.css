@@ -1,0 +1,54 @@
+body {
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-btw {
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  width: 50%;
+  margin: 0 20px;
+}
+
+.rooms {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.room-box {
+  border: 2px solid black;
+  margin: 5px 0;
+  padding: 0 10px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#join-room {
+  width: 100%;
+  background: green;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.board {
+  height: 100%;
+  text-align: center;
+  background: darkmagenta;
+  color: white;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-family: cursive;
+}

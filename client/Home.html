@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.socket.io/4.1.3/socket.io.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script> -->
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+</head>
+
+<body>
+    <div class='d-flex justify-btw' style='margin-top: 40px;'>
+        <div class='left board'>
+            <h2>Welcome to the quiz app 🎉</h2>
+        </div>
+        <div class='right'>
+            <div class="rooms" id="roomsContainer">
+
+            </div>
+            <button id='join-room' onclick="joinRoom()">Join Room</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
